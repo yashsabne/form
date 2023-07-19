@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="form.css">
+    <!-- <link rel="stylesheet" href="form.php"> -->
+</head>
+<body>
+    <div class="cont-father">
+    <div class="container">
+        <form action="form.php" method="POST">
+            <div class="gretting">
+            <img style="margin-right: 16px;" src="https://m.media-amazon.com/images/G/01/sell/images/icon-magic-sparkle-dark.svg" alt="">
+            <h1 style="text-align: center; margin-bottom: 20px;">Get in touch</h1>
+            <img style="margin-left: 16px;" src="https://m.media-amazon.com/images/G/01/sell/images/icon-magic-sparkle-dark.svg" alt="">
+        </div>
+            <div class="required">
+            <h4 style="margin-bottom: 3.5px;">Name* :</h4>
+            <input style="width: 300px; height: 25px; border-radius: 4px;margin-bottom: 7px;" type="text" id="name" placeholder="Enter your name" required>
+            <h4 style="margin-bottom: 3.5px;">Email* : </h4>
+            <input style="width: 300px; height: 25px; border-radius: 4px;margin-bottom: 7px;" type="email" id="email" placeholder="Enter your Email" required>
+            <h4 style="margin-bottom: 3.5px;">Phone number* :</h4>
+           <div class="number">
+               <select style="width: 50px;height:28.6px ;border-top-left-radius: 4px;border-bottom-left-radius: 4px;" name="number" id="number-code">
+                   <option value="+91">+91</option>
+                   <option value="+35">+35</option>
+                   <option value="+71">+71</option>
+                   <option value="+56">+56</option>
+               </select>
+            <input style="width: 250px; height: 25px; border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;border-left: none; margin-bottom: 7px;" type="number" id="number" placeholder="Enter your mobile number" required>
+        </div>
+        </div> <h3 style="margin-top: 20px;margin-left: 20px;">Your Address* :</h3>
+            <div class="address">
+                <div class="one">
+                    <ul>
+                        <li><h4>Your Country*</h4></li>
+                        <li><select style="width: 150px; height: 25px; border-radius: 4px;" name="your country" id="your-country" required>
+                            <option value="India">India</option>
+                            <!-- <option value="America"></option> -->
+                        </select></li>
+                    </ul>
+                </div>
+                <div class="two">
+                    <ul>
+                        <li><h4> Your State*</h4></li>
+                        <li><select style="width: 150px; height: 25px; border-radius: 4px;" name="your state" id="your-state" required>
+                            <option value="">Your state</option>
+                            <option value="Maharashtra">Maharashtra</option>
+                            <option value="Punjab">Punjab</option>
+                            <option value="Bihar">Bihar</option>
+                            <option value="Andra Pradesh">Andra Pradesh</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Goa">Goa</option>
+                            <option value="Tamil Nadu">Tamil Nadu</option>
+                            <option value="Rajastan">Rajastan</option>
+                            <option value="Kerala">Kerala</option>
+                            <option value="Karnataka">Karnataka</option>
+                            <option value="Gujarat">Gujarat</option>
+                            <option value="MP">Madhya Pradesh</option>
+                            <option value="UP">Uttar Pradesh</option>
+                            <option value="Haryana">Haryana</option>
+                            <option value="Assam">Assam</option>
+                            <option value="West Bengal">West Bengal</option>
+                            <option value="Telangana">Telangana</option>
+                            <option value="Uttarakhand">Uttarakhand</option>
+                            <option value="Chhattisgarh">Chhattisgarh</option> 
+                            <option value="Jharkhand">Jharkhand</option>
+                            <option value="Other">Other</option>
+                        </select> </li>
+                    </ul>
+             </div>
+             <div class="three">
+                 <ul>
+                     <li><h4>Enter your Town*</h4></li>
+                     <li><input style="width: 150px; height: 25px; border-radius: 4px; border: 0.1px solid black;" type="text" placeholder="Enter town" id="town" required> </li>
+                 </ul>
+             </div>
+            </div>
+            <h3 style="margin-top: 20px; margin-left: 20px;margin-bottom: 13px;">Any question ? Or suggestion</h3>
+            <textarea style="margin-left: 15px;" name="your question" id="question-suggestion" placeholder="any question ? or suggestion Please drop here" itemtype="text" cols="60" rows="10"></textarea>
+                  
+            <button id="submit">Submit</button>
+            <br><br>
+            <span style="display: flex;justify-content: center;">(after submit wait for 4 sec)</span><br>
+            <br>
+            <span>"<big>*</big>"---indicates that it is mendantory</span>
+        </form>
+    </div>
+    </div>
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+   function sendEmail() {
+      Email.send({
+                  Host : "smtp.elasticemail.com",
+                  Username : "yashsabne2006@gmail.com",
+                  Password : "7276462261",
+                  To : 'yashsabne2006@gmail.com',
+                  From : document.getElementById("email").value,
+                  Subject : "contact-form",
+                  Body : "And this is the body"
+              }).then(
+              message => alert("Form has successfully Submitted,\nThank you!")
+              );
+         }   
+    </script> -->
+</body>
+</html>
